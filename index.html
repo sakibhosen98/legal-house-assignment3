@@ -35,19 +35,38 @@
                 <a class="nav-link" href="#">Contact us</a>
               </li>
             </ul>
-            <button class="btn legal-btn-repo btn-lg" type="submit">Free consultation</button>
+            <button class="btn-primary btn btn-outline-warning btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal"type="submit">Free consultation</button>
+         
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">MD SAKIB HOSEN</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
           </div>
         </div>
       </nav>
       <!-- banner part -->
-     <div class="banner mw-100 text-white d-flex justify-content-center align-items-center px-5 mt-3">
+     <div class="banner text-white d-flex justify-content-center align-items-center px-5 mt-3">
           <div class=" ">
             <h1 class="display-3 fw-bold pb-2">We Provide Effective <br> Legal Solutions</h1>
             <p class="pb-2">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour.</p>
-            <label for="service">
-            <input class="py-2 px-5" type="text" name="" id="service" placeholder="search your services">
-            </label>
-            <button class="btn legal-btn-repo py-2 px-5 fz-4 ms-3">Search</button>
+            <form class="d-flex gap-3" action="">
+              <input class="w-75 ps-2 rounded" id="inputlg" type="text" placeholder="Search your service">
+              <button class="btn-primary btn btn-outline-warning btn-lg w-25">Search</button>
+            </form>
           </div>
       </div>
     </header>
@@ -125,14 +144,13 @@
       <section class="text-center mt-5">
         <h1 class="fs-3 fw-semibold mb-2">What Our Client Say</h1>
         <p class="mb-4">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
-        <div id="carouselExample" class="carousel slide">
+        <div id="carouselExample" class="carousel slide ">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="img-1 text-white d-flex justify-content-center align-items-center">
-                  <img src="" alt="">
-                <div>
+              <div class="img-1 text-white d-flex justify-content-center align-items-center">              
+                <div class="px-5 pt-5">
                   <img class="profile-img mb-4" src="./images/hardy.png" alt="">
-                  <h3 class="fs-4">Awlad Hossain</h3>
+                  <h3 class="fs-4">Awlad Hossain 1</h3>
                 <p >UIX Designer</p>
                 <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin <br> literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney <br> College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
                 <div class="d-flex justify-content-center align-items-center gap-1 rounded">
@@ -145,9 +163,9 @@
             </div>
             <div class="carousel-item">
               <div class="img-2 text-white d-flex justify-content-center align-items-center">
-                <div>
+                <div class="px-5 pt-5">
                   <img class="profile-img mb-4" src="./images/hardy.png" alt="">
-                  <h3 class="fs-4">Awlad Hossain</h3>
+                  <h3 class="fs-4">Awlad Hossain 2</h3>
                 <p >UIX Designer</p>
                 <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin <br> literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney <br> College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
                  <div class="d-flex justify-content-center align-items-center gap-1 rounded">
@@ -159,10 +177,10 @@
               </div>
             </div>
             <div class="carousel-item">
-              <div class="img-3 text-white d-flex justify-content-center align-items-center">
-                <div>
-                  <img class="profile-img mb-4" src="./images/hardy.png" alt="">
-                  <h3 class="fs-4">Awlad Hossain</h3>
+              <div class="img-3 text-white d-flex justify-content-center align-items-center pb-5">
+                <div class="px-5 pt-5 py-5">
+                  <img class="profile-img mb-3" src="./images/hardy.png" alt="">
+                  <h3 class="fs-4">Awlad Hossain 3</h3>
                 <p >UIX Designer</p>
                 <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin <br> literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney <br> College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
                 <div class="d-flex justify-content-center align-items-center gap-1 rounded">
@@ -187,8 +205,8 @@
       <!-- Question section -->
       <section class="mt-5 text-center">
         <h2 class="mb-3">Frequently Asked Any Questions</h2>
-        <p class="mb-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-        <div class="row row-cols-1 row-cols-md-2 g-5">
+        <p class="mb-5">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
+        <div class="row flex row-cols-1 row-cols-md-2">
           <div class="col">
             <div class="accordion" id="accordionExample">
               <div class="accordion-item mb-2">
@@ -215,7 +233,7 @@
                   </div>
                 </div>
               </div>
-              <div class="accordion-ite mb-2">
+              <div class="accordion-item mb-2">
                 <h2 class="accordion-header" id="headingFour">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
                    3. What is the css box model?
@@ -227,7 +245,7 @@
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
+              <div class="accordion-item ">
                 <h2 class="accordion-header" id="headingThree">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                    4. What is the semantic tag?
@@ -250,7 +268,7 @@
     </main>
 
     <!-- footer section start -->
-    <footer class="bg-black text-white pt-5">
+    <footer class="bg-black text-white pt-5 mt-5">
       <div class="container">
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 pt-5 pb-5 py-5 px-3">
         <div class="col pb-4">
@@ -278,8 +296,10 @@
         <div class="col">
           <h5>Subscribe</h5>
           <p>Subscribe for our latest & Articles. We Won’t Give You Spam Mails</p>
-          <label for=""></label>
-          <input type="email" id="email" placeholder="Email Address"> <button>hello</button>
+          <form class="d-flex" action="">
+            <input class="w-75 ps-2 rounded" id="inputlg" type="email" placeholder="Email Address">
+            <button class="btn-primary btn btn-outline-warning btn-lg w-25">Search</button>
+          </form>
         </div>
       </div>
     </div>
